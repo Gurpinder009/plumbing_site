@@ -1,0 +1,25 @@
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+
+body{
+  min-height: 100vh;
+  overflow-x: hidden; 
+  overflow-y: auto; 
+}
+
+.embla {
+  overflow: hidden;
+}
+.embla__container {
+  display: flex;
+  height: 35rem;
+  border:2px solid red;
+}
+.embla__slide {
+  flex: 0 0 100%;
+  min-width: 0;
+}

@@ -1,0 +1,49 @@
+
+
+/* navbar styles */
+.navbar{
+    min-height: 4.5rem;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 3.5rem ;
+    box-shadow: 0 0 3px rgba(0, 0, 10, 0.4);
+}
+
+
+/* brand name styles */
+.brandName{
+    font-weight: 700;
+    text-transform: uppercase;
+
+    color: #1e6091;
+}
+
+
+/* linkwrapper styles */
+.linkSection{
+    display: flex;
+    column-gap: 2rem;
+}
+
+
+/* actual link styles */
+.link{
+    text-decoration: none;
+    color:#4F709C;
+    font-size: 1.1rem;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+/* drawer toggle button styles */
+.menu{
+    color:#4F709C;
+    cursor: pointer;
+    display:none;
+}
+
+/* .link:hover{
+    color: #1679AB;
+
+} */
