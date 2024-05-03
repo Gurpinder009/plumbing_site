@@ -8,7 +8,7 @@ export default function Footer() {
     <motion.footer className={styles.footer}>
       <motion.div className={styles.footerGridArea}>
 
-        <FooterServiceAreas/>
+        <FooterServiceAreas />
         <FooterContactDetails />
         <FooterServices />
         <FooterQuickLinks />
@@ -54,12 +54,13 @@ function FooterContactDetails() {
 function FooterQuickLinks() {
   return (
     <motion.ul className={styles.FooterQuickLinks}>
-    <h3>Quick Links</h3>
+      <h3>Quick Links</h3>
+      <li>Home</li>
+      <li>Contact Us</li>
+      <li>About</li>
+      <li>Services</li>
+      <li>Gallery</li>
 
-    <li>Home</li>
-    <li>Contact Us</li>
-    <li>About</li>
-    <li>Services</li>
     </motion.ul>
   )
 }
@@ -69,21 +70,21 @@ function FooterQuickLinks() {
 function FooterServices() {
   return (
     <motion.ul className={styles.footerContactDetails}>
-    <h3>Our Services</h3>
-    <li>Plumbing</li>
-    <li>Plumbing</li>
-    <li>Plumbing</li>
-    <li>Plumbing</li>
-    <li>Plumbing</li>
-    <li>Plumbing</li>
-    <li>Plumbing</li>
-    <li>Plumbing</li>
-    <li>Plumbing</li>
-  
+      <h3>Our Services</h3>
+      <li>Plumbing</li>
+      <li>Plumbing</li>
+      <li>Plumbing</li>
+      <li>Plumbing</li>
+      <li>Plumbing</li>
+      <li>Plumbing</li>
+      <li>Plumbing</li>
+      <li>Plumbing</li>
+      <li>Plumbing</li>
 
 
-  
-  </motion.ul>
+
+
+    </motion.ul>
 
   )
 }

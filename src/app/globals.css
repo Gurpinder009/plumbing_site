@@ -17,9 +17,9 @@ body{
 .embla__container {
   display: flex;
   height: 35rem;
-  border:2px solid red;
 }
 .embla__slide {
   flex: 0 0 100%;
   min-width: 0;
+  border:2px solid red;
 }

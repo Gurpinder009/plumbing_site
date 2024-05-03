@@ -15,6 +15,8 @@ export default function NavBar() {
             <motion.section className={styles.linkSection}>
                 <LinkComponent path="/" name={"Home"} />
                 <LinkComponent path="/services" name={"Services"} />
+                <LinkComponent path="/gallery" name={"Gallery"} />
+
                 <LinkComponent path="/about" name={"About Us"} />
                 <LinkComponent path="/contact" name={"Contact Us"} />
             </motion.section>

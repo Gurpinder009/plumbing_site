@@ -1,0 +1,13 @@
+.galleryWrapper{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding:2rem;
+    gap:1rem;
+
+}
+
+.imageWrapper{
+    border:2px solid red;
+    height:20rem;
+    overflow: hidden;
+}
