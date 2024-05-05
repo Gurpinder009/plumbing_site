@@ -10,14 +10,14 @@ function Contact() {
     <div>
       <SmallImageHeader
         title={"Contact Us"}
-        imagePath={"/get.jpg"}
+        imagePath={"/image14.jpg"}
         alt={"Loadding..."}
       />
         <motion.div className={styles.formAndMapWrapper}>
       <div>
           <div>
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49457.41761264978!2d-122.80101743326948!3d49.163040786636465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5485d9e4b24a853b%3A0x87bba2256d9df31!2s14485%2088a%20Ave%2C%20Surrey%2C%20BC%20V3R%201A2!5e0!3m2!1sen!2sca!4v1714697596007!5m2!1sen!2sca"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2609.773924331471!2d-122.85802272393333!3d49.14791667137286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5485d9843c95948d%3A0x8218547c990e8051!2s13250%2080%20Ave%2C%20Surrey%2C%20BC%20V3W%203B3!5e0!3m2!1sen!2sca!4v1714856485676!5m2!1sen!2sca"
               style={{ border: 0 }}
               allowFullScreen={true}
               loading="lazy"
@@ -91,8 +91,8 @@ function ContactUsForm() {
       </motion.div>
 
       <motion.section className={styles.buttonWrapper}>
-      <motion.button className={styles.btn}>Submit</motion.button>
       <motion.button className={styles.btn}>Reset</motion.button>
+      <motion.button className={styles.btn}>Submit</motion.button>
 
       </motion.section>
     </motion.form>

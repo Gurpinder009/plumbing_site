@@ -5,8 +5,8 @@ import styles from "./Css/smallImageHeader.module.css";
 import Image from "next/image";
 
 const defaultQuality ={
-  width:400,
-  height:500
+  width:1000,
+  height:1000
 }
 
 export default function SmallImageHeader({title,imagePath,alt,quality=defaultQuality}){

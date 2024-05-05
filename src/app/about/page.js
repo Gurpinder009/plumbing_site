@@ -5,7 +5,7 @@ import React from 'react'
 export default function About() {
   return (
     <div>
-      <SmallImageHeader title={"About Us"} imagePath={"/get.jpg"} alt={"Loadding..."}/>
+      <SmallImageHeader title={"About Us"} imagePath={"/image18.jpg"} alt={"Loadding..."}/>
       this is working fine 
     </div>
   )

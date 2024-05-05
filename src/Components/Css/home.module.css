@@ -1,0 +1,34 @@
+.slideImageWrapper{
+    height: 40rem;
+    overflow: hidden;
+    background: rgb(23, 120, 199);
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.slideImage{
+    width: 100%;
+    height: 100%;
+    
+    position: absolute;
+    filter: blur(1.8px);
+    opacity: 0.6;
+    z-index: 12;
+    pointer-events: none;
+}
+
+.slideText{
+    padding:5rem;
+    color:white;
+    z-index: 50;
+    
+    width: 55rem;
+}
+.slideText> h1{
+font-size: 3.7rem;
+}
+
+.slideText> p{
+    font-size: 1.2rem;
+}

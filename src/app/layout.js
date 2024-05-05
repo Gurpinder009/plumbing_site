@@ -4,6 +4,9 @@ import Footer from "@/Components/Footer";
 import Drawer from "@/Components/Drawer";
 
 import { fontFamily } from "@/Components/fontStyle";
+import { config } from '@fortawesome/fontawesome-svg-core'
+import '@fortawesome/fontawesome-svg-core/styles.css'
+config.autoAddCss = false
 
 export const metadata = {
   title: "Create Next App",

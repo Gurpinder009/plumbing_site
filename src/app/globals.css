@@ -11,15 +11,16 @@ body{
   overflow-y: auto; 
 }
 
+
+
 .embla {
   overflow: hidden;
 }
 .embla__container {
   display: flex;
-  height: 35rem;
+  min-height: 10rem;
 }
 .embla__slide {
   flex: 0 0 100%;
   min-width: 0;
-  border:2px solid red;
 }

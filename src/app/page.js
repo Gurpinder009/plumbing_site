@@ -1,13 +1,10 @@
 "use client";
-import useEmblaCarousel from "embla-carousel-react";
 import { motion } from "framer-motion";
-import Autoplay from "embla-carousel-autoplay";
 import Image from "next/image";
-import { useCallback } from "react";
+import useEmblaCarousel from "embla-carousel-react";
+import Autoplay from "embla-carousel-autoplay";
 
-const options = {
-  delay: 3000,
-};
+import styles from "../Components/Css/home.module.css"
 
 export default function Home() {
   return (
@@ -18,24 +15,36 @@ export default function Home() {
 }
 
 function Slider() {
-  const [emblaRef] = useEmblaCarousel({ loop: true }, [Autoplay(options)]);
-
+  const [emblaRef] = useEmblaCarousel({}, [Autoplay()]);
   return (
     <motion.div>
       <div className="embla" ref={emblaRef}>
         <div className="embla__container">
-          <Slide path={"/get1.jpg"} />
-          <Slide path={"/get1.jpg"} />
+          <div className="embla__slide">
+            <Slide path="/image14.jpg" />
+          </div>
+          <div className="embla__slide">
+            <Slide path="/image2.jpg" />
+          </div>
+          <div className="embla__slide">
+            <Slide path="/image15.jpg" />
+          </div>
         </div>
       </div>
+
+      <motion.div>this is working fien</motion.div>
     </motion.div>
   );
 }
 
-function Slide({path}) {
+function Slide({ path }) {
   return (
-    <div className="embla__slide">
-      <Image src={path}  fill={true} alt="This is not working"></Image>
+    <div className={styles.slideImageWrapper}>
+      <motion.div className={styles.slideText}>
+        <h1>Dhillon Bro's Mechanical LTD</h1>
+        <p>Stuck with a plumbing problem? Don't worry, help is just a call away! Here in Surrey, BC </p>
+      </motion.div>
+      <Image className={styles.slideImage} src={path} width={1000} height={1000} alt="This is not working"></Image>
     </div>
   );
 }
