@@ -14,8 +14,8 @@ export default function Main({children}) {
 
   return (
     <>
-     <NavBar  isDrawerOpen={isDrawerOpen} handleDrawer={handleDrawer} />
-        {isDrawerOpen ? <Drawer /> : <></>}
+     <NavBar   handleDrawer={handleDrawer} />
+        {isDrawerOpen ? <Drawer handleDrawer={handleDrawer} /> : <></>}
         {children}
         <Footer /> 
     </>
