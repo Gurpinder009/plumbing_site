@@ -1,12 +1,10 @@
 import "./globals.css";
-import NavBar from "@/Components/NavBar";
-import Footer from "@/Components/Footer";
-import Drawer from "@/Components/Drawer";
 
 import { fontFamily } from "@/Components/fontStyle";
-import { config } from '@fortawesome/fontawesome-svg-core'
-import '@fortawesome/fontawesome-svg-core/styles.css'
-config.autoAddCss = false
+import { config } from "@fortawesome/fontawesome-svg-core";
+import "@fortawesome/fontawesome-svg-core/styles.css";
+import Main from "./main";
+config.autoAddCss = false;
 
 export const metadata = {
   title: "Create Next App",
@@ -14,15 +12,15 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+
   return (
     <html lang="en">
       <body className={fontFamily.className}>
-        <NavBar/>
-        {/* <Drawer/> */}
+        <Main>
         {children}
-        <Footer/>        
-        
-        </body>
+
+        </Main>
+      </body>
     </html>
   );
 }

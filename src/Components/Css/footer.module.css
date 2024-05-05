@@ -1,21 +1,21 @@
-.footer{
-    background-color:  #1e6091;
-    display:grid;
+.footer {
+    background-color: #1e6091;
+    display: grid;
     grid-template-rows: calc(100% - 5.6rem) 6.6rem;
 }
 
 
-.footerGridArea{
-    display:grid;
-    padding:3rem 5rem;
-    gap:3rem;
-    
+.footerGridArea {
+    display: grid;
+    padding: 3rem 5rem;
+    gap: 3rem;
+
     align-items: start;
-    color:rgba(255, 255, 255, 0.844);
+    color: rgba(255, 255, 255, 0.844);
     grid-template-columns: 2fr 3fr 2fr 2fr;
 }
 
-.footerGridArea > ul{
+.footerGridArea>ul {
     text-align: justify;
     list-style: none;
     display: grid;
@@ -23,22 +23,22 @@
     font-size: 1rem;
 }
 
-.footerGridArea >*> li{
+.footerGridArea>*>li {
 
     margin-bottom: 0.3px;
     cursor: pointer;
-    display:flex;
+    display: flex;
     align-items: center;
 
 }
 
-.footerGridArea > * > h3{
-    color:white;
+.footerGridArea>*>h3 {
+    color: white;
     margin-bottom: 7px;
 }
 
 
-.icon{
+.icon {
     margin-right: 1rem;
     font-size: larger;
 }
@@ -49,32 +49,53 @@
 
 
 
-.copyrightSection{
-    
-    display:grid;
+.copyrightSection {
+
+    display: grid;
     justify-items: center;
     /* justify-content: space-between; */
     align-content: center;
-    padding:0 4rem;
+    padding: 0 4rem;
     background-color: #184e77;
-    color:rgba(255, 255, 255, 0.64);
+    color: rgba(255, 255, 255, 0.64);
     row-gap: 0.6rem;
 }
 
 
-.copyrightSection > p:first-child{
-color:white;
+.copyrightSection>p:first-child {
+    color: white;
 }
 
 
-.copyrightSection > p:last-child{
+.copyrightSection>p:last-child {
     font-size: small;
 }
 
-.copyrightSection > p:last-child > strong{
-    color:rgba(255, 255, 255, 0.788);
+.copyrightSection>p:last-child>strong {
+    color: rgba(255, 255, 255, 0.788);
 }
-    
 
 
 
+@media (max-width:1100px) {
+    .footerGridArea {
+        grid-template-columns: 1fr 1fr;
+        padding: 3em;
+
+    }
+}
+
+@media (max-width:900px) {
+
+    .footerGridArea {
+        padding: 2em 1em;
+        grid-template-columns: 1fr;
+    }
+
+
+    .copyrightSection {
+
+        text-align: center;
+        padding:0;
+    }
+}

@@ -1,12 +1,10 @@
-
-
 /* navbar styles */
-.navbar{
+.navbar {
     min-height: 4.5rem;
-    display:flex;
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    padding:0.6rem 3.5rem ;
+    padding: 0.6rem 3.5rem;
     box-shadow: 0 0 3px rgba(0, 0, 10, 0.4);
     position: sticky;
     top: 0;
@@ -16,34 +14,74 @@
 
 
 /* brand name styles */
-.brandName{
+.brandName {
     font-weight: 700;
     text-transform: uppercase;
     color: #1e6091;
+    pointer-events: none;
 }
 
 
 /* linkwrapper styles */
-.linkSection{
+.linkSection {
     display: flex;
     column-gap: 2rem;
 }
 
 
 /* actual link styles */
-.link{
+.link {
     text-decoration: none;
-    color:#4F709C;
+    color: #4F709C;
     font-size: 1.1rem;
     font-weight: 400;
     text-transform: capitalize;
 }
 
 /* drawer toggle button styles */
-.menu{
-    color:#4F709C;
+.menu {
+    color: #4F709C;
     cursor: pointer;
-    display:none;
+    display: none;
+    font-size: larger;
+    border:none;
+    background-color: #fff;
+}
+
+
+@media (max-width:1100px) {
+    .navbar {
+        padding: 0.6rem 2rem;
+
+
+    }
+
+
+    .linkSection {
+        display: none;
+    }
+
+
+    .menu {
+        display: initial;
+    }
+}
+
+
+
+@media (max-width:800px) {
+    .navbar {
+        padding: 0.6rem 1rem;
+    }
+
+    
+.brandLogo{
+    width: 10rem;
+    height:90%;
+}
+
+
+
 }
 
 /* .link:hover{

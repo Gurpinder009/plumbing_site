@@ -21,67 +21,67 @@ export default function page() {
         />
 
         <ServiceCard
-          imagePath="/get.jpg"
+          imagePath="/image8.jpg"
           title="Hot Water Heater"
           description="this is description"
         />
 
         <ServiceCard
-          imagePath="/get.jpg"
+          imagePath="/image3.jpg"
           title="Burst Pipe Repair"
           description="this is description"
         />
 
         <ServiceCard
-          imagePath="/get.jpg"
+          imagePath="/download.jpeg"
           title="Toilet Repair"
           description="this is description"
         />
 
         <ServiceCard
-          imagePath="/get.jpg"
+          imagePath="/image1.jpg"
           title="Gas Line Installation"
           description="this is description"
         />
 
         <ServiceCard
-          imagePath="/get.jpg"
+          imagePath="/image17.jpg"
           title="Faucet"
           description="this is description"
         />
 
         <ServiceCard
-          imagePath="/get.jpg"
+          imagePath="/image8.jpg"
           title="Sump Pump Installation"
           description="this is description"
         />
 
         <ServiceCard
-          imagePath="/get.jpg"
+          imagePath="/image17.jpg"
           title="Heating"
           description="this is description"
         />
 
         <ServiceCard
-          imagePath="/get.jpg"
+          imagePath="/image1.jpg"
           title="Boiler Repair & Installation"
           description="this is description"
         />
 
         <ServiceCard
-          imagePath="/get.jpg"
+          imagePath="/image2.jpg"
           title="Thermostat Installation"
           description="this is description"
         />
 
         <ServiceCard
-          imagePath="/get.jpg"
+          imagePath="/image8.jpg"
           title="Radiator Repair"
           description="this is description"
         />
 
         <ServiceCard
-          imagePath="/get.jpg"
+          imagePath="/image7.jpg"
           title="Drainage"
           description="this is description"
         />
@@ -96,8 +96,8 @@ function ServiceCard({ imagePath, title, description }) {
       <Image
         className={styles.serviceCardImage}
         src={imagePath}
-        width={300}
-        height={300}
+        width={100}
+        height={100}
         alt={"no owrking"}
       />
       <div className={styles.serviceCardDetailsWrapper}>

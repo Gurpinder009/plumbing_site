@@ -24,13 +24,35 @@
     width: 100%;
     height:10rem;
     margin:0;
-
-
+ 
 }
 .serviceCardDetailsWrapper{
     padding:0.8rem 1rem;
-    margin:0;
-    
+    margin:0;   
+}
+
+
+
+
+@media (max-width:1100px) {
+    .servicesWrapper{
+        grid-template-columns: 1fr 1fr ;
+    }
+
+}
+
+
+@media (max-width:800px) {
+
+    .servicesWrapper{
+        grid-template-columns: 1fr;
+        padding:2rem 1rem;
+        gap: 1rem;
+    }
+
+    .imageWrapper{
+        width: 100%;
+    }
 }
 
 
