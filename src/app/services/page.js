@@ -4,6 +4,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import styles from "../../Components/Css/services.module.css";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function page() {
   return (
@@ -18,6 +19,7 @@ export default function page() {
           imagePath="/image21.jpg"
           title="Plumbing"
           description="this is description"
+          
         />
 
         <ServiceCard
@@ -90,20 +92,28 @@ export default function page() {
   );
 }
 
-function ServiceCard({ imagePath, title, description }) {
+export function ServiceCard({ imagePath, title, description }) {
   return (
-    <motion.div className={styles.serviceCard}>
-      <Image
-        className={styles.serviceCardImage}
-        src={imagePath}
-        width={100}
-        height={100}
-        alt={"no owrking"}
-      />
-      <div className={styles.serviceCardDetailsWrapper}>
-        <h3 className={styles.serviceCardHeading}>{title}</h3>
-        <p className={styles.serviceCardDescription}>{description}</p>
-      </div>
-    </motion.div>
+    <motion.div
+        className={styles.serviceCard}
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 1, delay: 0.5 }}
+        viewport={{ once: true }}
+      >
+    <Link href="/services/121">
+        <Image
+          className={styles.serviceCardImage}
+          src={imagePath}
+          width={100}
+          height={100}
+          alt={"no owrking"}
+        />
+        <div className={styles.serviceCardDetailsWrapper}>
+          <h3 className={styles.serviceCardHeading}>{title}</h3>
+          <p className={styles.serviceCardDescription}>{description}</p>
+        </div>
+    </Link>
+      </motion.div>
   );
 }

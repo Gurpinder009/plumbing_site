@@ -1,7 +1,7 @@
 "use client";
 import React, { forwardRef } from "react";
 import { useForm } from "react-hook-form";
-import { motion } from "framer-motion";
+import { delay, motion } from "framer-motion";
 import SmallImageHeader from "@/Components/SmallImageHeader";
 import styles from "../../Components/Css/contactUs.module.css";
 
@@ -13,7 +13,7 @@ function Contact() {
         imagePath={"/image14.jpg"}
         alt={"Loadding..."}
       />
-        <motion.div className={styles.formAndMapWrapper}>
+        <motion.div className={styles.formAndMapWrapper} initial={{opacity:0,y:"-2rem"}} whileInView={{opacity:1, y:0}} viewport={{once:true}} transition={{delay:1}}>
       <div>
           <div>
             <iframe
@@ -50,7 +50,7 @@ function ContactUsForm() {
 
   return (
     <motion.form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
-      <motion.h1 className={styles.formHeading}>Get in touch</motion.h1>
+      <motion.h1 className={styles.formHeading}>GET IN TOUCH</motion.h1>
       <motion.div className={styles.formFieldWrapper}>
         <motion.div className={styles.formField}>
           <motion.input
@@ -91,8 +91,8 @@ function ContactUsForm() {
       </motion.div>
 
       <motion.section className={styles.buttonWrapper}>
-      <motion.button className={styles.btn}>Reset</motion.button>
-      <motion.button className={styles.btn}>Submit</motion.button>
+      <motion.button whileHover={{backgroundColor:"#1e6091", color:"#fff"}} className={styles.btn}>Reset</motion.button>
+      <motion.button whileHover={{backgroundColor:"#fff", color:"#1e6091"}} className={styles.btn}>Submit</motion.button>
 
       </motion.section>
     </motion.form>

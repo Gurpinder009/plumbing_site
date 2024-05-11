@@ -88,9 +88,8 @@
     text-transform: uppercase;
     color: #1e6091;
     background-color: #1e609116;
-
-
-
+    font-size: 1em;
+    cursor: pointer;
 }
 
 .btn:nth-child(even) {

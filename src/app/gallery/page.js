@@ -49,15 +49,15 @@ export default function page() {
     </motion.div>
   );
 }
+// {/* <h1 className={styles.hoverText}> */}
+{/* <FontAwesomeIcon icon={faExpand} className={styles.icon}  /> */}
+// Click to Zoom</h1>
 
 function GalleryImage({ imagePath }) {
   return (
-    <motion.div className={styles.imageWrapper}>
-      <h1 className={styles.hoverText}>
-      <FontAwesomeIcon icon={faExpand} className={styles.icon}  />
+    <motion.div className={styles.imageWrapper} initial={{opacity:0}} whileInView={{opacity:1}} whileHover={{scale:1.2}} transition={{duration:0.5}} viewport={{ once: true }}>
         
         
-         Click to Zoom</h1>
       <Image
         src={imagePath}
         alt="loading.."

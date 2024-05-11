@@ -26,7 +26,6 @@
 .footerGridArea>*>li {
 
     margin-bottom: 0.3px;
-    cursor: pointer;
     display: flex;
     align-items: center;
 
@@ -41,6 +40,13 @@
 .icon {
     margin-right: 1rem;
     font-size: larger;
+}
+
+
+
+.footerLinkItem{
+    text-decoration: none;
+    color: #fff;
 }
 
 
