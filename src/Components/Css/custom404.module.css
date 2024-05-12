@@ -1,0 +1,13 @@
+.custom404Container {
+    display: grid;
+    justify-items: center;
+    height: 90vh;
+    row-gap: 2rem;
+
+    align-content: center;
+}
+
+.icon404{
+    color: rgba(0, 0, 0, 0.6);
+    font-size:5rem;
+}

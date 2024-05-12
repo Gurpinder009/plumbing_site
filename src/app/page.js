@@ -14,6 +14,7 @@ import {
   faTruckFast,
 } from "@fortawesome/free-solid-svg-icons";
 import { ServiceCard } from "./services/page";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -26,9 +27,7 @@ export default function Home() {
   );
 }
 
-
-
-//? Slider Componenet 
+//? Slider Componenet
 function Slider() {
   const [emblaRef] = useEmblaCarousel({}, [Autoplay()]);
   return (
@@ -50,8 +49,7 @@ function Slider() {
   );
 }
 
-
-//? component for individial Slide 
+//? component for individial Slide
 function Slide({ path }) {
   return (
     <motion.div className={styles.slideImageWrapper}>
@@ -59,18 +57,19 @@ function Slide({ path }) {
         <motion.h1
           whileInView={{ opacity: 1, y: 0 }}
           initial={{ opacity: 0, y: "-4rem" }}
+          viewport={{ once: true }}
         >
-          Dhillon Bro's Mechanical LTD
+          Dhillon Bro&apos;s Mechanical LTD
         </motion.h1>
         <motion.p
           initial={{ opacity: 0, y: "-4rem" }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ delay: 0.5 }}
         >
-          Stuck with a plumbing problem? Don't worry, help is just a call away!
-          Here in Surrey, BC{" "}
+          Stuck with a plumbing problem? Don&apos;t worry, help is just a call away!
+          Here in Surrey, BC
         </motion.p>
+        <SlideButtons />
       </motion.div>
       <Image
         className={styles.slideImage}
@@ -83,7 +82,25 @@ function Slide({ path }) {
   );
 }
 
-
+//? Slide Buttons Componenet
+function SlideButtons() {
+  return (
+    <motion.div
+      className={styles.slideButton}
+      whileInView={{ opacity: 1, y: 0 }}
+      initial={{ opacity: 0, y: "-4rem" }}
+      
+      viewport={{ once: true }}
+    >
+      <Link href={"/about"}>
+        <motion.div whileHover={{backgroundColor:"#1e6091",color:"#fff"}}>About Us</motion.div>
+      </Link>
+      <Link href={"/gallery"}>
+        <motion.div whileHover={{backgroundColor:"#1e6091",color:"#fff"}}>Our Work</motion.div>
+      </Link>
+    </motion.div>
+  );
+}
 
 //? component of WhyChooseUs Section in home page
 function WhyChooseUsSection() {
@@ -106,7 +123,6 @@ function WhyChooseUsSection() {
   );
 }
 
-
 //? Component for individual card in WhyChoose section
 function WhyChooseUsItem({ icon, title }) {
   return (
@@ -127,19 +143,16 @@ function WhyChooseUsItem({ icon, title }) {
   );
 }
 
-
-
 //? Wrapper for ServiceCards secton
 function SeviceCardsSection() {
   return (
     <div className={styles.whyChooseUsWrapper}>
       <h1 className={styles.whyChooseUsHeading}>Services Offered</h1>
       <p style={{ textAlign: "center", color: "#555555" }}>
-        
-        At Dhillon Bro's Plumbing LTD, we offer expert plumbing services to keep
-        your home's water flowing smoothly. From leaky pipes to drain cleaning,
+        At Dhillon Bro&apos;s Plumbing LTD, we offer expert plumbing services to keep
+        your home&apos;s water flowing smoothly. From leaky pipes to drain cleaning,
         our licensed and insured plumbers can handle any problem, big or small.
-        We're committed to providing fast, reliable service so you can get back
+        We&apos;re committed to providing fast, reliable service so you can get back
         to enjoying your home.
       </p>
 

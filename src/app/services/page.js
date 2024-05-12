@@ -101,7 +101,7 @@ export function ServiceCard({ imagePath, title, description }) {
         transition={{ duration: 1, delay: 0.5 }}
         viewport={{ once: true }}
       >
-    <Link href="/services/121">
+    <Link href="/contact">
         <Image
           className={styles.serviceCardImage}
           src={imagePath}

@@ -111,7 +111,7 @@ function CopyrightSection() {
     <motion.div className={styles.copyrightSection} >
       <motion.p>
         <FontAwesomeIcon icon={faCopyright} />
-        Dhillon Bro' Mechanical LTD, all Rights Reserved.</motion.p>
+        Dhillon Bro&apos;s Mechanical LTD, all Rights Reserved.</motion.p>
       <motion.p>Designed by <strong>GSDESIGNS</strong></motion.p>
     </motion.div>
   )

@@ -1,9 +1,10 @@
 "use client";
-import React, { forwardRef } from "react";
+import React, { useRef} from "react";
 import { useForm } from "react-hook-form";
-import { delay, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import SmallImageHeader from "@/Components/SmallImageHeader";
 import styles from "../../Components/Css/contactUs.module.css";
+import emailjs from "@emailjs/browser"
 
 function Contact() {
   return (
@@ -35,6 +36,7 @@ function Contact() {
 export default Contact;
 
 function ContactUsForm() {
+  const formRef = useRef();
   const { register, handleSubmit } = useForm({
     defaultValues: {
       name: "",
@@ -44,12 +46,25 @@ function ContactUsForm() {
     },
   });
 
+
+
+
+
   const onSubmit = (data) => {
     console.log(data);
+
+    emailjs.sendForm('service_fff4nh7', 'template_simple1', data, 'GH5SGKEL9d62Zh1YV')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+      
+      formRef.current.reset();
   };
 
   return (
-    <motion.form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
+    <motion.form ref={formRef} className={styles.form} onSubmit={handleSubmit(onSubmit)}>
       <motion.h1 className={styles.formHeading}>GET IN TOUCH</motion.h1>
       <motion.div className={styles.formFieldWrapper}>
         <motion.div className={styles.formField}>

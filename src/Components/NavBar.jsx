@@ -13,7 +13,7 @@ export default function NavBar({handleDrawer}) {
     return (
         <motion.nav className={`${styles.navbar} ${fontFamily.className} `} initial={{y:"-8rem"}} animate={{y:0}} >
             <motion.h1 className={styles.brandName} initial={{rotate:360}} animate={{rotate:0}}>
-                <Image className={styles.brandLogo} src={"/logo.png"} width={250} height={60} />
+                <Image className={styles.brandLogo} src={"/logo.png"} alt="loadding" width={250} height={60} />
             </motion.h1>
             <motion.section className={styles.linkSection}>
                 <LinkComponent path="/" icon={faHome} name={"Home"} />
