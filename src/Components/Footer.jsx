@@ -6,6 +6,7 @@ import { faAngleRight, faEnvelope, faHome, faImages, faLocationDot, faPhone, faS
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCopyright } from "@fortawesome/free-regular-svg-icons";
 import Link from "next/link";
+import { faFacebook, faInstagram, faTiktok } from "@fortawesome/free-brands-svg-icons";
 
 export default function Footer() {
   return (
@@ -50,11 +51,18 @@ function FooterContactDetails() {
       <ListItemComponent title={"+1604-791-6600"} icon={faPhone} />
       <ListItemComponent title={"+1604-791-6700"} icon={faPhone} />
       <ListItemComponent title={"Dhillon.plumbing@gmail.com"} icon={faEnvelope} />
-      <ListItemComponent title={"Dhillon.plumbing@hotmail.com"} icon={faEnvelope} />
+      <ListItemComponent title={"Instagram"} icon={faInstagram} />
+      <ListItemComponent title={"Facebook"} icon={faFacebook} />
+      <ListItemComponent title={"Tiktok"} icon={faTiktok} />
+
 
     </motion.ul>
   )
 }
+
+// https://www.instagram.com/dhillonbrosmechanical.ltd?igsh=czB1aGhnZjFmMTds
+// https://www.tiktok.com/@dhillonbrosmechanicalltd?_t=8mT1lynOq0b&_r=1
+// https://www.facebook.com/profile.php?id=100070294054207&mibextid=ZbWKwL
 
 
 function FooterQuickLinks() {

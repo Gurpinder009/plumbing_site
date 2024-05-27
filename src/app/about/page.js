@@ -23,7 +23,7 @@ export default function About() {
         />
         <div className={styles.aboutUsDetailContainer}>
           <h2 className={styles.aboutUsHeading}>About Us</h2>
-          <p className={styles.aboutUsDescription}>
+          <div className={styles.aboutUsDescription}>
             Need a plumber in Vancouver?
             <br />
             <br />
@@ -42,6 +42,7 @@ export default function About() {
             <br />
             <br />
             <b>Call us today for:</b>
+
             <ul>
               <li>Residential and commercial plumbing services</li>
               <li>Kitchen and bathroom installations and renovations</li>
@@ -49,7 +50,7 @@ export default function About() {
               <li>Fast and reliable service</li>
             </ul>
             We&apos;ll get the job done right, every time.
-          </p>
+          </div>
         </div>
       </div>
     </div>
