@@ -38,6 +38,23 @@ export default function page() {
         <GalleryImage imagePath={"/image19.jpg"}/>
         <GalleryImage imagePath={"/image20.jpg"}/>
         <GalleryImage imagePath={"/image21.jpg"}/>
+        <GalleryImage imagePath={"/image22.jpg"}/>
+        <GalleryImage imagePath={"/image23.jpg"}/>
+        <GalleryImage imagePath={"/image24.jpg"}/>
+        <GalleryImage imagePath={"/image25.jpg"}/>
+        <GalleryImage imagePath={"/image26.jpg"}/>
+        <GalleryImage imagePath={"/image27.jpg"}/>
+        <GalleryImage imagePath={"/image28.jpg"}/>
+        <GalleryImage imagePath={"/image29.jpg"}/>
+        <GalleryImage imagePath={"/image30.jpg"}/>
+        <GalleryImage imagePath={"/image31.jpg"}/>
+        <GalleryImage imagePath={"/image32.jpg"}/>
+        <GalleryImage imagePath={"/image33.jpg"}/>
+        <GalleryImage imagePath={"/image34.jpg"}/>
+        <GalleryImage imagePath={"/image35.jpg"}/>
+   
+       
+
         
 
 
@@ -55,8 +72,8 @@ export default function page() {
 
 function GalleryImage({ imagePath }) {
   return (
-    <motion.div className={styles.imageWrapper} initial={{opacity:0}} whileInView={{opacity:1}} whileHover={{scale:1.2}} transition={{duration:0.5}} viewport={{ once: true }}>
-        
+    <motion.div className={styles.imageWrapper} initial={{opacity:0}} whileInView={{opacity:1}} transition={{duration:0.5}} viewport={{ once: true }}>
+         {/* whileHover={{scale:1.2}} */}
         
       <Image
         src={imagePath}

@@ -23,3 +23,11 @@
 .drawerLinks > .icon{
     margin-right: 0.5rem;
 }
+
+@media (min-width:1200px){
+    .drawer{
+        left: -18rem;
+    }
+} 
+
+

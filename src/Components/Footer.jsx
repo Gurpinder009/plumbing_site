@@ -29,8 +29,8 @@ function FooterServiceAreas() {
   return (
     <motion.ul className={styles.footerContactDetails}>
       <motion.h3>Availability</motion.h3>
-      <ListItemComponent title={"Weekdays: 8am - 10pm"} icon={faAngleRight} />
-      <ListItemComponent title={"Weekends: 8am - 4pm"} icon={faAngleRight} />
+      <ListItemComponent title={"Weekdays: 8am - 5pm"} icon={faAngleRight} />
+      <ListItemComponent title={"Weekends: 9am - 2pm"} icon={faAngleRight} />
     </motion.ul>
   )
 }
@@ -50,6 +50,8 @@ function FooterContactDetails() {
       <ListItemComponent title={"+1604-791-6600"} icon={faPhone} />
       <ListItemComponent title={"+1604-791-6700"} icon={faPhone} />
       <ListItemComponent title={"Dhillon.plumbing@gmail.com"} icon={faEnvelope} />
+      <ListItemComponent title={"Dhillon.plumbing@hotmail.com"} icon={faEnvelope} />
+
     </motion.ul>
   )
 }
@@ -87,18 +89,13 @@ function FooterServices() {
     <motion.ul className={styles.footerContactDetails}>
       <motion.h3>
         Our Services</motion.h3>
-      <ListItemComponent title={"Plumbing"} icon={faAngleRight} />
-      <ListItemComponent title={"Hot Water Heater"} icon={faAngleRight} />
+      <ListItemComponent title={"Plumbing and Hydronic Heating"} icon={faAngleRight} />
+      <ListItemComponent title={"Hot Water Tanks Repair & New Installation"} icon={faAngleRight} />
       <ListItemComponent title={"Burst Pipe Repair"} icon={faAngleRight} />
-      <ListItemComponent title={"Toilet Repair"} icon={faAngleRight} />
       <ListItemComponent title={"Gas Line Installation"} icon={faAngleRight} />
-      <ListItemComponent title={"Faucet"} icon={faAngleRight} />
-      <ListItemComponent title={"Sump Pump Installation"} icon={faAngleRight} />
-      <ListItemComponent title={"Heating"} icon={faAngleRight} />
-      <ListItemComponent title={"Boiler Repaiir & Installation"} icon={faAngleRight} />
-      <ListItemComponent title={"Thermostat Installation"} icon={faAngleRight} />
-      <ListItemComponent title={"Radiator Repair"} icon={faAngleRight} />
-      <ListItemComponent title={"Drainage"} icon={faAngleRight} />
+      <ListItemComponent title={"Faucets Installation & Repair"} icon={faAngleRight} />
+      <ListItemComponent title={"New Sump Pump Installation"} icon={faAngleRight} />
+      <ListItemComponent title={"Boiler Repair & New Installation"} icon={faAngleRight} />
     </motion.ul>
 
   )
